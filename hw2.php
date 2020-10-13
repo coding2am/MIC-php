@@ -12,16 +12,16 @@
 <?php
 
 $cities = array (
-    'New York'=> 'NY(8,175,133 people)',
-    'Los Angeles' => 'CA(3,792,621)',
-    'Chicago' => 'IL(2,695,598)',
-    'Houston' => 'TX (2,100,263)',
-    'Philadelphia' => 'PA(1,526,006)',
-    'Phoenix' => 'AZ(1,445,632)',
-    'San Antonio' => 'TX(1,327,407)',
-    'San Diego' => 'CA(1,307,402)',
-    'Dallas' => 'TX(1,197,816)',
-    'San Jose' => 'CA(945,942)',
+    'New York ( NY )'=> 8175133,
+    'Los Angeles ( CA )' => 3792621,
+    'Chicago ( IL )' => 2695598,
+    'Houston ( TX )' => 2100263,
+    'Philadelphia ( PA )' => 1526006,
+    'Phoenix ( AZ )' => 1445632,
+    'San Antonio ( TX )' => 1327407,
+    'San Diego ( CA )' => 1307402,
+    'Dallas ( TX )' => 1197816,
+    'San Jose ( CA )' => 945942,
 );
 ?>
 <h1 class="text text-center text-dark">HOMEWORK 2</h1>
@@ -42,7 +42,7 @@ $cities = array (
         <table class="table table-bordered text-center">
             <?php
             $population = asort($cities);
-            echo "<thead class='thead-dark'> <th colspan=2> sort by 10 largest cities by population </th></thead>";
+            echo "<thead class='thead-dark'> <th colspan=2> 10 largest cities sort by  by population </th></thead>";
             foreach ($cities as $key => $value)
             {
                 echo "<tr><td>$key<td>$value</tr>";
@@ -56,7 +56,7 @@ $cities = array (
         <table class="table table-bordered text-center">
             <?php
             $city_name = ksort($cities);
-            echo "<thead class='thead-dark'> <th colspan=2> sort by 10 largest cities by name </th></thead>";
+            echo "<thead class='thead-dark'> <th colspan=2> 10 largest cities sort by by name </th></thead>";
             foreach ($cities as $key => $value)
             {
                 echo "<tr><td>$key<td>$value</tr>";
